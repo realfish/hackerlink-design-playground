@@ -1,0 +1,140 @@
+-
+	var _data = [
+		{
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}, {
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}, {
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}, {
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}, {
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}, {
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}, {
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}, {
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}, {
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}, {
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}, {
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}, {
+			title: 'Pocket Network Polygon-Grants Hackathon- Integrate a Pocket-powered Endpoint into your DApp',
+			duration: '2021/09/25–2021/11/02 16:00 UTC+8',
+			state: 'Ongoing',
+			reward: {
+				value: '6000',
+				token: 'USDT',
+				usd: '$6006.00',
+			},
+			tags: ['API', 'Notification', 'Frontend Development', 'Backend Development', 'Telegram'],
+		}
+	]
+
+.cardlist.cardlist-b
+	each item in _data
+		.card
+			.card-metadata
+				i.card-state-icon
+				.card-state= item.state
+				.card-duration= item.duration
+			h3.card-title= item.title
+			.card-reward
+				.card-reward-value= item.reward.value
+					span.card-reward-token= item.reward.token
+				.card-reward-usd= item.reward.usd
+			.card-taglist
+				each tag in item.tags
+					.card-taglist-item= tag

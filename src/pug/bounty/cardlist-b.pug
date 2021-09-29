@@ -1,0 +1,16 @@
+extends ../_template
+
+block var
+	- const assetsPath = "../"
+	- const pageTitl = "Bounty" + " — Cardlist B"
+	- const bodyClass = "bounty"
+	- let bodyClassModifier = ""
+	//--- Data
+
+block headScripts
+	//- include data/gon
+
+block mainBody
+	include module/cardlist-b
+
+block bodyFooter
