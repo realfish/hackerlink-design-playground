@@ -88,6 +88,8 @@
 	bottom: 8px;
 	display: flex;
 	flex-wrap: wrap;
+	max-height: 90px;
+	overflow: hidden;
 	justify-content: flex-start;
 }
 .card-taglist-item {
@@ -149,6 +151,9 @@
 		}
 		@media (max-width: 680px) {
 			flex-basis: 100%;
+		}
+		@media (max-width: 480px) {
+			margin: 4px;
 		}
 	}
 	
