@@ -239,7 +239,6 @@
 		
 		p {
 			margin-top: @leading;
-			hyphens   : auto;
 		}
 		
 		ol, ul {
@@ -266,5 +265,24 @@
 	.blog-typography .blog-article-credit {
 		width      : auto;
 		margin-top : @leading * 2.5;
+	}
+	
+	// Auto-hyphenation for mobile (quite narrow) screens
+	p, li, figcaption {
+		hyphens : auto;
+	}
+}
+
+// Localization
+.blog-typography--en {
+	font-family: @font-en;
+}
+.blog-typography--zh {
+	font-family: @font-zh;
+	
+	// Always auto-hyphenation for `zh` lang
+	// for better ragged-right typesetting
+	p, li, figcaption {
+		hyphens : auto;
 	}
 }
