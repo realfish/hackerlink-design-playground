@@ -44,36 +44,13 @@ body {
 @import "blog/typography";
 @import "blog/aside";
 
-/*************************
- * Responsive layout for Blog-Post template
- *************************/
+/*********************************
+ * Responsive layout for post
+ *********************************/
 
 .blog {
 	font-size: 16px;
 }
-/* .blog-post {
-	display        : flex;
-	justify-content: space-between;
-	width          : (1136em/16);
-	padding-top    : 198px;
-	padding-bottom : 320px;
-	margin         : 0 auto;
-}
-.blog-article {
-	flex-basis : (@emsize * 40 + 2);
-	flex-grow  : 0;
-	flex-shrink: 0;
-}
-.blog-aside {
-	position   : sticky;
-	top        : 96px;
-	align-self : start;
-	flex-basis : 368px;
-	flex-grow  : 0;
-	flex-shrink: 0;
-	// height     : calc(100vh - 96px);
-	// overflow-y : scroll;
-} */
 
 // Grid layout
 .blog-post {
@@ -227,7 +204,8 @@ body {
 		padding-bottom   : 0;
 		margin           : (@leading * 3) auto 0;
 		
-		display: flex;
+		// Flex for metadata groups
+		display        : flex;
 		justify-content: space-between;
 		.blog-metadata-group {
 			flex-basis: 50%;
@@ -253,14 +231,15 @@ body {
 		padding-bottom   : 0;
 		margin           : (@leading * 3) 24px 0;
 		
-		display: flex;
+		// Flex for metadata groups
+		display        : flex;
 		justify-content: space-between;
 		.blog-metadata-group {
-			flex-basis: 50%;
+			flex-basis : 50%;
 			flex-shrink: 1;
 		}
 		.blog-metadata-group + .blog-metadata-group {
-			margin-top: 0;
+			margin-top : 0;
 			margin-left: 16px;
 		}
 	}
