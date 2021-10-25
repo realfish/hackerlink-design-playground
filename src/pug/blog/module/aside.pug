@@ -1,0 +1,162 @@
+-
+	var _data = {
+		tag: {
+			caption: 'Tags',
+			list: [
+				{
+					label: 'Guide',
+					link:  '',
+				}, {
+					label: 'Bounty',
+					link:  '',
+				}, {
+					label: 'Funder',
+					link:  '',
+				}, {
+					label: 'HackerLink',
+					link:  '',
+				}, {
+					label: 'Ethereum',
+					link:  '',
+				}, {
+					label: 'BSC',
+					link:  '',
+				}, {
+					label: 'Substrate',
+					link:  '',
+				}, {
+					label: 'IPFS',
+					link:  '',
+				}, {
+					label: 'Filecoin',
+					link:  '',
+				}, {
+					label: 'Polygon',
+					link:  '',
+				}, {
+					label: 'Kusama',
+					link:  '',
+				}, {
+					label: 'Polkadot',
+					link:  '',
+				}, {
+					label: 'Solana',
+					link:  '',
+				}, {
+					label: 'Flow',
+					link:  '',
+				}, {
+					label: 'Cosmos',
+					link:  '',
+				}, {
+					label: 'Chainlink',
+					link:  '',
+				}
+			],
+		},
+		category: {
+			caption: 'Category',
+			label:   'Guide',
+			link:    'https://hackerlink.io/blog#cat-guide',
+		},
+		time: {
+			caption: 'Last updated',
+			label:     '2021/10/22',
+			timestamp: '2021-10-23T06:15:24Z',
+		},
+		share: {
+			caption: 'Share to',
+			to: [
+				{
+					name: 'Twitter',
+					id:   'twitter',
+				}, {
+					name: 'Telegram',
+					id:   'telegram',
+				}, {
+					name: 'WeChat',
+					id:   'wechat',
+				}, {
+					name: 'Copy link',
+					id:   'copylink',
+				}
+			]
+		},
+		related: {
+			caption: 'Related',
+			list: [
+				{
+					cover: '',
+					title: 'Polygon-Grants Hackathon',
+					desc:  '2021/08/30–2021/10/29',
+					link:  'https://hackerlink.io/grant/1'
+				}, {
+					cover: '',
+					title: 'Wanxiang Blockchain Hackathon: Digital World 2077',
+					desc:  '2021/09/15–2021/10/20',
+					link:  'https://hackerlink.io/grant/2'
+				}, {
+					cover: '',
+					title: 'Binance Smart Chain GameFi Hackathon @Russia & Eastern Europe',
+					desc:  '2021/09/15–2021/12/10',
+					link:  'https://hackerlink.io/grant/3'
+				}
+			],
+		}
+	}
+
+//- aside.blog-aside
+	.blog-aside-metadata
+		.blog-aside-metadata-group
+			h5.blog-aside-caption= _data.category.caption
+			p.blog-aside-metadata-info
+				a(href=_data.category.link)= _data.category.label
+		.blog-aside-metadata-group
+			h5.blog-aside-caption= _data.time.caption
+			p.blog-aside-metadata-info
+				time(datetime=_data.time.timestamp)= _data.time.label
+	.blog-aside-share
+		h5.blog-aside-caption= _data.share.caption
+	.blog-aside-related
+		h5.blog-aside-caption= _data.related.caption
+		.blog-aside-related-list
+			each card in _data.related.list
+				a(href=card.link).blog-aside-related-card
+					figure.blog-aside-related-card-cover
+					h3.blog-aside-related-card-title= card.title
+					p.blog-aside-related-card-desc= card.desc
+
+aside.blog-aside.blog-tag
+	h5.blog-aside-caption= _data.tag.caption
+	.blog-tag-list
+		each tag in _data.tag.list
+			span.blog-tag-item= tag.label
+
+aside.blog-aside.blog-metadata
+	.blog-metadata-group
+		h5.blog-aside-caption= _data.category.caption
+		p.blog-metadata-info
+			a(href=_data.category.link)= _data.category.label
+	.blog-metadata-group
+		h5.blog-aside-caption= _data.time.caption
+		p.blog-metadata-info
+			time(datetime=_data.time.timestamp)= _data.time.label
+
+aside.blog-aside.blog-share
+	h5.blog-aside-caption= _data.share.caption
+	.blog-share-list
+		each item in _data.share.to
+			a(
+				href="javascript:void(0)"
+				class=`blog-share-${item.id}`
+				style=`background-image: url(${assetsPath}assets/icon-share-${item.id}.svg)`
+			).blog-share-item
+
+aside.blog-aside.blog-related
+	h5.blog-aside-caption= _data.related.caption
+	.blog-related-list
+		each card in _data.related.list
+			a(href=card.link).blog-related-card
+				figure.blog-related-card-cover
+				h3.blog-related-card-title= card.title
+				p.blog-related-card-desc= card.desc
