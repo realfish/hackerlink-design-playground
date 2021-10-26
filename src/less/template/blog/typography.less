@@ -1,0 +1,288 @@
+// Reset
+.blog-typography {
+	header,
+	section,
+	h1, h2, h3, h4, h5, h6,
+	p,
+	blockquote,
+	ol, ul, li,
+	figure,
+	figcaption
+	img {
+		margin: 0;
+	}
+
+	h1, h2, h3, h4, h5, h6,
+	b, strong {
+		font-weight: @semibold;
+	}
+
+	ol, ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	a {
+		color          : inherit;
+		text-decoration: none;
+		
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+// .blog-typography header
+.blog-typography .blog-article-header {
+	font-size  : @emsize;
+	line-height: @leading;
+	
+	h1 {
+		line-height: @leading * 2;
+		font-size  : (45em/18);
+		font-weight: @bold;
+	}
+	
+	figure,
+	.blog-article-hero {
+		img {
+			display: block;
+		}
+	}
+}
+
+// .blog-typography section,
+.blog-typography .blog-article-body {
+	margin-top : @leading * 3;
+	font-size  : @emsize;
+	line-height: @leading;
+	
+	
+	
+	/*--- Block styles ---*/
+	h2 {
+		margin-top : @leading * 2.5;
+		line-height: @leading * 1.5;
+		font-size  : (32em/18);
+		font-weight: @bold;
+		
+		// Highlighted H2
+		strong {
+			color      : @accent-main;
+			font-weight: @bold;
+		}
+	}
+	h2:first-child {
+		margin-top : @leading;
+	}
+	
+	h3 {
+		margin-top : @leading;
+		line-height: @leading;
+		font-size  : (22em/18);
+		font-weight: @semibold;
+	}
+	
+	h4, h5, h6 {
+		margin-top : @leading;
+		line-height: @leading;
+		font-size  : (18em/18);
+		font-weight: @semibold;
+	}
+	
+	h3, h4, h5, h6 {
+		// Highlighted H3–H6
+		strong {
+			color: @accent-main;
+		}
+	}
+	
+	p {
+		margin-top: @leading;
+	}
+	
+	ol, ul {
+		margin-top: @leading;
+		
+		li + li {
+			margin-top: (@leading / 2);
+		}
+	}
+	
+	ol > li,
+	ul > li {
+		position    : relative;
+		padding-left: @emsize * 2;
+	}
+	
+	ol > li::before,
+	ul > li::before {
+		position  : absolute;
+		top       : 0;
+		left      : 0;
+		width     : @emsize * 1.5;
+		text-align: right;
+	}
+	
+	// Serial numbers for OL items
+	ol {
+		counter-reset: count;
+	}
+	ol > li {
+		counter-increment: count;
+	}
+	ol > li::before {
+		content: counter(count) ".";
+	}
+	
+	// Bullet mark for UL items
+	ul > li::before {
+		// U+2022 Bullet
+		content: "\2022";
+	}
+	/*--- Block styles END ---*/
+	
+	
+	
+	/*--- Inline styles ---*/
+	a {
+		color          : @accent-main;
+		text-decoration: underline;
+	}
+	
+	strong, b {
+		font-weight: @semibold;
+	}
+	
+	em, i {
+		font-style: italic;
+	}
+	/*--- Inline styles END ---*/
+}
+
+// .blog-typography footer.credit,
+.blog-typography .blog-article-credit {
+	width      : (@footer-emsize * 20 + 2);
+	border-top : 1px solid @ink-line;
+	padding-top: @footer-emsize;
+	margin-top : @leading * 2.5;
+	color      : @ink-sub;
+	font-size  : @footer-emsize;
+	line-height: @footer-leading;
+	
+	ul > li {
+		position    : relative;
+		padding-left: @footer-emsize * 1.5;
+		
+		a {
+			text-decoration: underline;
+		}
+	}
+	ul > li::before {
+		content   : "\2022";
+		position  : absolute;
+		left      : 0;
+		width     : @footer-emsize * 1;
+		text-align: right;
+	}
+}
+
+// Mobile layout
+@media (max-width: 783px) {
+	// Adjust the typographic sizes for article header & body
+	@emsize : 16px;
+	@leading: 24px;
+	
+	.blog-typography .blog-article-header {
+		font-size  : @emsize;
+		line-height: @leading;
+		
+		h1 {
+			line-height: @leading * 2;
+			// font-size  : (45em/18);
+			font-size  : (40em/16);
+			font-weight: @bold;
+		}
+	}
+	
+	// .blog-typography section,
+	.blog-typography .blog-article-body {
+		margin-top : @leading * 3;
+		font-size  : @emsize;
+		line-height: @leading;
+		
+		/*--- Block styles ---*/
+		h2 {
+			margin-top : @leading * 2.5;
+			line-height: @leading * 1.5;
+			// font-size  : (32em/18);
+			font-size  : (28em/16);
+			font-weight: @bold;
+		}
+		h2:first-child {
+			margin-top : @leading;
+		}
+		
+		h3 {
+			margin-top : @leading;
+			line-height: @leading;
+			// font-size  : (22em/18);
+			font-size  : (20em/16);
+		}
+		
+		h4, h5, h6 {
+			margin-top : @leading;
+			line-height: @leading;
+			// font-size  : (18em/18);
+			font-size  : (16em/16);
+		}
+		
+		p {
+			margin-top: @leading;
+		}
+		
+		ol, ul {
+			margin-top: @leading;
+			
+			li + li {
+				margin-top: (@leading / 2);
+			}
+		}
+		
+		ol > li,
+		ul > li {
+			padding-left: @emsize * 2;
+		}
+		
+		ol > li::before,
+		ul > li::before {
+			width     : @emsize * 1.5;
+		}
+		/*--- Block styles END ---*/
+	}
+	
+	// .blog-typography footer.credit,
+	.blog-typography .blog-article-credit {
+		width      : auto;
+		margin-top : @leading * 2.5;
+	}
+	
+	// Auto-hyphenation for mobile (quite narrow) screens
+	p, li, figcaption {
+		hyphens : auto;
+	}
+}
+
+// Localization
+.blog-typography--en {
+	font-family: @font-en;
+}
+.blog-typography--zh {
+	font-family: @font-zh;
+	
+	// Always auto-hyphenation for `zh` lang
+	// for better ragged-right typesetting
+	p, li, figcaption {
+		hyphens : auto;
+	}
+}

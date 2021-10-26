@@ -33,7 +33,9 @@ head
 	link(rel="icon" sizes="192x192" href=`${assetsPath}assets/android-touch-icon-hd.png?v=${verTag}`)
 	
 	link(rel="shortcut icon" href=`${assetsPath}assets/favicon.ico?v=${verTag}`)
-	link(rel="stylesheet" href=`${assetsPath}assets/app.css?v=${verTag}`)
+	
+	block headStyles
+		link(rel="stylesheet" href=`${assetsPath}assets/app.css?v=${verTag}`)
 	
 	block headScripts
 	

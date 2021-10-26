@@ -1,0 +1,28 @@
+extends ../_template
+
+block var
+	- const assetsPath = "../"
+	- const pageTitl = "Blog" + " — Post layout & typography"
+	- const bodyClass = "blog"
+	- let bodyClassModifier = ""
+	//--- Data
+
+block headStyles
+	link(rel="stylesheet" href=`${assetsPath}assets/normalize.css?v=${verTag}`)
+	link(rel="stylesheet" href=`${assetsPath}assets/blog-post.css?v=${verTag}`)
+
+block headScripts
+	//- include data/gon
+
+
+block bodyHeader
+	nav.fake-nav
+
+block mainBody
+	.blog-post
+		a(href="javascript:void(0)").blog-navback Back to Blog
+		include module/article
+		include module/aside
+
+block bodyFooter
+	footer.fake-footer
