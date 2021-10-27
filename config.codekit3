@@ -361,7 +361,7 @@
       "sI" : 0,
       "sU" : 1
     },
-    "\/src\/less\/template\/blog-post.less" : {
+    "\/src\/less\/template\/blog\/blog-post.less" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 2,
@@ -379,7 +379,7 @@
       "sI" : 0,
       "sU" : 1
     },
-    "\/src\/less\/template\/blog\/aside.less" : {
+    "\/src\/less\/template\/blog\/module\/aside.less" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -389,7 +389,7 @@
       "ma" : 1,
       "mS" : 0,
       "oA" : 1,
-      "oAP" : "\/docs\/less\/template\/test\/assets\/aside.css",
+      "oAP" : "\/docs\/less\/template\/blog\/test\/assets\/aside.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -397,7 +397,7 @@
       "sI" : 0,
       "sU" : 1
     },
-    "\/src\/less\/template\/blog\/typography.less" : {
+    "\/src\/less\/template\/blog\/module\/typography.less" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -407,7 +407,7 @@
       "ma" : 1,
       "mS" : 0,
       "oA" : 1,
-      "oAP" : "\/docs\/less\/template\/test\/assets\/typography.css",
+      "oAP" : "\/docs\/less\/template\/blog\/test\/assets\/typography.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -415,7 +415,7 @@
       "sI" : 0,
       "sU" : 1
     },
-    "\/src\/less\/template\/blog\/var.less" : {
+    "\/src\/less\/template\/blog\/module\/var.less" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -425,7 +425,7 @@
       "ma" : 1,
       "mS" : 0,
       "oA" : 1,
-      "oAP" : "\/docs\/less\/template\/test\/assets\/var.css",
+      "oAP" : "\/docs\/less\/template\/blog\/test\/assets\/var.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -433,7 +433,7 @@
       "sI" : 0,
       "sU" : 1
     },
-    "\/src\/less\/template\/bounty.less" : {
+    "\/src\/less\/template\/bounty\/bounty.less" : {
       "aP" : 1,
       "bl" : 0,
       "co" : 0,
@@ -443,7 +443,7 @@
       "ma" : 1,
       "mS" : 0,
       "oA" : 1,
-      "oAP" : "\/docs\/less\/test\/assets\/bounty.css",
+      "oAP" : "\/docs\/less\/template\/test\/assets\/bounty.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -523,17 +523,17 @@
       "cB" : 0,
       "cOD" : 0,
       "ft" : 512,
-      "hM" : 0,
+      "hM" : 2,
       "oA" : 0,
       "oAP" : "\/docs\/bounty\/cardlist-a.html",
       "oF" : 3,
-      "oS" : 1
+      "oS" : 0
     },
     "\/src\/pug\/bounty\/cardlist-b.pug" : {
       "cB" : 0,
       "cOD" : 0,
       "ft" : 512,
-      "hM" : 0,
+      "hM" : 2,
       "oA" : 0,
       "oAP" : "\/docs\/bounty\/cardlist-b.html",
       "oF" : 3,
@@ -572,7 +572,7 @@
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "logo-react",
     "iconImageWasSetByUser" : 1,
-    "lastBuiltDate" : 656959230.94695902
+    "lastBuiltDate" : 657016834.11852002
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
