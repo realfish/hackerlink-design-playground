@@ -7,6 +7,10 @@ block var
 	- let bodyClassModifier = ""
 	//--- Data
 
+block headStyles
+	link(rel="stylesheet" href=`${assetsPath}assets/normalize.css?v=${verTag}`)
+	link(rel="stylesheet" href=`${assetsPath}assets/bounty-cardlist.css?v=${verTag}`)
+
 block headScripts
 	//- include data/gon
 
