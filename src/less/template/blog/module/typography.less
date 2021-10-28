@@ -1,3 +1,8 @@
+/***************************************
+ * Typesetting, micro-typography,
+ * figure layout, & l10n for article
+ ***************************************/
+
 // Reset
 .blog-typography {
 	header,
@@ -267,20 +272,24 @@
 		margin-top : @leading * 2.5;
 	}
 	
-	// Auto-hyphenation for mobile (quite narrow) screens
+	// Auto-hyphenation for body text on mobile (narrow column)
 	p, li, figcaption {
 		hyphens : auto;
 	}
 }
 
-// Localization
+// L10n for article
 .blog-typography--en {
+	// The font config for UI's global locale is set in `body { … }`.
+	// This is the local font preference for article's typography only.
 	font-family: @font-en;
 }
 .blog-typography--zh {
+	// The font config for UI's global locale is set in `body { … }`.
+	// This is the local font preference for article's typography only.
 	font-family: @font-zh;
 	
-	// Always auto-hyphenation for `zh` lang
+	// Always auto-hyphenation for body text in `zh-*` lang
 	// for better ragged-right typesetting
 	p, li, figcaption {
 		hyphens : auto;

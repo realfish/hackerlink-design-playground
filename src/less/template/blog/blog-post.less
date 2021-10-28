@@ -1,3 +1,9 @@
+@charset "UTF-8";
+
+/**
+ * Depend on normalize.css
+ */
+
 @import "module/var";
 
 // Reset globally
@@ -26,7 +32,7 @@ body {
 	top             : 0;
 	left            : 0;
 	right           : 0;
-	height          : @navheight;
+	height          : @fake-navheight;
 	z-index         : @zIndex-5;
 	background-color: fadeout(@bg-main, 20%);
 	backdrop-filter : blur(20px);
@@ -37,7 +43,7 @@ body {
 }
 .fake-footer {
 	width: 100%;
-	height: 380px;
+	height: @fake-footerheight;
 	background-color: fadeout(@ink-main, 95%);
 }
 
@@ -87,7 +93,7 @@ body {
 }
 .blog-navback {
 	position   : absolute;
-	top        : (@navheight + 32);
+	top        : (@fake-navheight + 32);
 	color      : @ink-main;
 	font-size  : 12px;
 	line-height: 24px;
@@ -170,7 +176,7 @@ body {
 	@media (min-width: 1680px) {
 		position         : sticky;
 		top              : 86px;
-		top              : (@navheight + 16 + 142 + 56);
+		top              : (@fake-navheight + 16 + 142 + 56);
 		grid-column-start: 1;
 		grid-column-end  : 5;
 		grid-row-start   : 2;
@@ -214,7 +220,7 @@ body {
 	
 	// Wide desktop
 	@media (min-width: 1680px) {
-		top              : (@navheight + 16);
+		top              : (@fake-navheight + 16);
 		grid-column-start: 1;
 		grid-column-end  : 3;
 		grid-row-start   : 1;
@@ -282,7 +288,7 @@ body {
 	
 	// Wide desktop
 	@media (min-width: 1680px) {
-		top              : (@navheight + 16);
+		top              : (@fake-navheight + 16);
 		grid-column-start: 3;
 		grid-column-end  : 5;
 		grid-row-start   : 1;
@@ -316,7 +322,7 @@ body {
 	}
 }
 .blog-related {
-	top              : (@navheight + 16 + 142 + 56);
+	top              : (@fake-navheight + 16 + 142 + 56);
 	z-index          : @zIndex-1;
 	grid-column-start: 9;
 	grid-column-end  : 13;
@@ -326,7 +332,7 @@ body {
 	
 	// Wide desktop
 	@media (min-width: 1680px) {
-		top              : (@navheight + 16);
+		top              : (@fake-navheight + 16);
 		grid-column-start: 14;
 		grid-column-end  : 18;
 		grid-row-start   : 1;
