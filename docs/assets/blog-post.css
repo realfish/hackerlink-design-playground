@@ -181,6 +181,7 @@ body {
   font-weight: 600;
 }
 .blog-typography .blog-article-body em,
+.blog-typography .blog-article-body cite,
 .blog-typography .blog-article-body i {
   font-style: italic;
 }
@@ -592,7 +593,7 @@ body {
     grid-row-end: 4;
     width: 722px;
     padding-bottom: 0;
-    margin: 84px auto 0;
+    margin: 70px auto 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
@@ -620,7 +621,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 4;
     padding-bottom: 0;
-    margin: 72px 24px 0;
+    margin: 60px 24px 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
@@ -704,7 +705,7 @@ body {
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 6;
-    margin: 84px 32px 0;
+    margin: 56px 32px 0;
   }
   .blog-related .blog-related-list {
     display: grid;
@@ -745,7 +746,7 @@ body {
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 6;
-    margin: 72px 24px 0;
+    margin: 48px 24px 0;
   }
   .blog-related .blog-related-card {
     margin-top: 8px;
