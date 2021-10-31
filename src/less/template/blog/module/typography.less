@@ -51,7 +51,10 @@
 	figure,
 	.blog-article-hero {
 		img {
-			display: block;
+			display      : block;
+			width        : 100%;
+			border-radius: @corner-m;
+			margin-top   : @leading;
 		}
 	}
 }
@@ -77,9 +80,9 @@
 			font-weight: @bold;
 		}
 	}
-	h2:first-child {
+	/* h2:first-child {
 		margin-top : @leading;
-	}
+	} */
 	
 	h3 {
 		margin-top : @leading;
@@ -163,6 +166,17 @@
 		font-style: italic;
 	}
 	/*--- Inline styles END ---*/
+	
+	/*--- Figure/image ---*/
+	img {
+		display      : block;
+		width        : 100%;
+		border       : 1px solid @ink-line;
+		border-radius: @corner-m;
+		box-sizing   : border-box;
+		margin-top   : @leading;
+	}
+	/*--- Figure/image END ---*/
 }
 
 // .blog-typography footer.credit,
@@ -204,9 +218,17 @@
 		
 		h1 {
 			line-height: @leading * 2;
+			// Scale down font size, 45 -> 40
 			// font-size  : (45em/18);
 			font-size  : (40em/16);
 			font-weight: @bold;
+		}
+		
+		figure,
+		.blog-article-hero {
+			img {
+				margin-top   : @leading;
+			}
 		}
 	}
 	
@@ -220,17 +242,19 @@
 		h2 {
 			margin-top : @leading * 2.5;
 			line-height: @leading * 1.5;
+			// Scale down font size, 32 -> 28
 			// font-size  : (32em/18);
 			font-size  : (28em/16);
 			font-weight: @bold;
 		}
-		h2:first-child {
+		/* h2:first-child {
 			margin-top : @leading;
-		}
+		} */
 		
 		h3 {
 			margin-top : @leading;
 			line-height: @leading;
+			// Scale down font size, 22 -> 20
 			// font-size  : (22em/18);
 			font-size  : (20em/16);
 		}
@@ -238,6 +262,7 @@
 		h4, h5, h6 {
 			margin-top : @leading;
 			line-height: @leading;
+			// Scale down font size, 18 -> 16
 			// font-size  : (18em/18);
 			font-size  : (16em/16);
 		}
@@ -264,6 +289,12 @@
 			width     : @emsize * 1.5;
 		}
 		/*--- Block styles END ---*/
+		
+		/*--- Figure/image ---*/
+		img {
+			margin-top   : @leading;
+		}
+		/*--- Figure/image END ---*/
 	}
 	
 	// .blog-typography footer.credit,
