@@ -93,15 +93,14 @@ body {
 .blog-typography .blog-article-header figure img,
 .blog-typography .blog-article-header .blog-article-hero img {
   display: block;
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 28px;
 }
 .blog-typography .blog-article-body {
   margin-top: 84px;
   font-size: 18px;
   line-height: 28px;
-  /*--- Block styles ---*/
-  /*--- Block styles END ---*/
-  /*--- Inline styles ---*/
-  /*--- Inline styles END ---*/
 }
 .blog-typography .blog-article-body h2 {
   margin-top: 70px;
@@ -112,9 +111,6 @@ body {
 .blog-typography .blog-article-body h2 strong {
   color: hsl(24, 100%, 55%);
   font-weight: 700;
-}
-.blog-typography .blog-article-body h2:first-child {
-  margin-top: 28px;
 }
 .blog-typography .blog-article-body h3 {
   margin-top: 28px;
@@ -185,6 +181,14 @@ body {
 .blog-typography .blog-article-body i {
   font-style: italic;
 }
+.blog-typography .blog-article-body img {
+  display: block;
+  width: 100%;
+  border: 1px solid hsla(240, 10%, 6%, 0.1);
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 28px;
+}
 .blog-typography .blog-article-credit {
   width: 282px;
   border-top: 1px solid hsla(240, 10%, 6%, 0.1);
@@ -218,21 +222,20 @@ body {
     font-size: 2.5em;
     font-weight: 700;
   }
+  .blog-typography .blog-article-header figure img,
+  .blog-typography .blog-article-header .blog-article-hero img {
+    margin-top: 24px;
+  }
   .blog-typography .blog-article-body {
     margin-top: 72px;
     font-size: 16px;
     line-height: 24px;
-    /*--- Block styles ---*/
-    /*--- Block styles END ---*/
   }
   .blog-typography .blog-article-body h2 {
     margin-top: 60px;
     line-height: 36px;
     font-size: 1.75em;
     font-weight: 700;
-  }
-  .blog-typography .blog-article-body h2:first-child {
-    margin-top: 24px;
   }
   .blog-typography .blog-article-body h3 {
     margin-top: 24px;
@@ -264,6 +267,9 @@ body {
   .blog-typography .blog-article-body ol > li::before,
   .blog-typography .blog-article-body ul > li::before {
     width: 24px;
+  }
+  .blog-typography .blog-article-body img {
+    margin-top: 24px;
   }
   .blog-typography .blog-article-credit {
     width: auto;
