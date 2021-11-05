@@ -275,9 +275,9 @@ body {
     width: auto;
     margin-top: 60px;
   }
-  p,
-  li,
-  figcaption {
+  .blog-typography p,
+  .blog-typography li,
+  .blog-typography figcaption {
     -webkit-hyphens: auto;
         -ms-hyphens: auto;
             hyphens: auto;
