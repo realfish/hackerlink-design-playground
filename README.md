@@ -6,3 +6,4 @@
 ### Blog post responsive layout
 
 - English article sample: <https://realfish.github.io/hackerlink-design-playground/blog/post.html>
+
