@@ -58,7 +58,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Arial, "PingFang SC", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
   font-size: 16px;
   line-height: 1;
-  font-feature-settings: "pnum", "kern", "liga";
+  -webkit-font-feature-settings: "pnum", "kern", "liga";
+          font-feature-settings: "pnum", "kern", "liga";
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
