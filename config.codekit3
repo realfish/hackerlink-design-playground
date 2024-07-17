@@ -15,6 +15,22 @@
       "oAP" : "\/docs\/docs",
       "oF" : 0
     },
+    "\/legal-files\/dh-privacy.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/docs\/legal-files\/dh-privacy.html",
+      "oF" : 1
+    },
+    "\/legal-files\/dh-terms.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/docs\/legal-files\/dh-terms.html",
+      "oF" : 1
+    },
     "\/README.md" : {
       "cB" : 0,
       "cS" : 0,
@@ -692,7 +708,7 @@
     "displayValueWasSetByUser" : 1,
     "iconImageName" : "logo-react",
     "iconImageWasSetByUser" : 1,
-    "lastBuiltDate" : 742892961.38083899
+    "lastBuiltDate" : 742895233.57184601
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
