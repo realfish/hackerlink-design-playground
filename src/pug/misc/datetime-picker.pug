@@ -1,0 +1,23 @@
+extends ../_template
+
+block var
+	- const assetsPath = "../"
+	- const pageTitl = "Datetime picker"
+	- const bodyClass = ""
+	- let bodyClassModifier = ""
+	//--- Data
+
+block headStyles
+	link(rel="stylesheet" href=`${assetsPath}assets/normalize.css?v=${verTag}`)
+
+block headScripts
+	//- include data/gon
+
+block mainBody
+	input#datetime(type="datetime-local")
+
+block bodyFooter
+
+block bodyScripts
+	script
+		include datetime-picker.js
